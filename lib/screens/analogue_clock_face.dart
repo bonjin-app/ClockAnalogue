@@ -4,9 +4,12 @@ import 'package:flutter/rendering.dart';
 import 'package:intl/intl.dart';
 
 class AnalogueClockFace extends StatelessWidget {
-  const AnalogueClockFace({Key key, @required this.now}) : super(key: key);
-
   final DateTime now;
+
+  const AnalogueClockFace({
+    Key key,
+    @required this.now}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;

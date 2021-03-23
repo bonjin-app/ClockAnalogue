@@ -14,7 +14,7 @@ enum WeatherConditions {
 }
 
 class TemperatureModel extends ChangeNotifier {
-  String _city = 'Cape Town';
+  String _city = 'Republic of Korea';
   String get city => _city;
 
   set city(String city) {

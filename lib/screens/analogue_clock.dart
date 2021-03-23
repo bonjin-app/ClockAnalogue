@@ -9,8 +9,11 @@ import 'package:flutter/rendering.dart';
 import 'package:intl/intl.dart';
 
 class AnalogueClock extends StatefulWidget {
-  const AnalogueClock({Key key, this.model}) : super(key: key);
   final TemperatureModel model;
+
+  const AnalogueClock({
+    Key key,
+    this.model}) : super(key: key);
 
   @override
   createState() => _AnalogueClockState();
@@ -78,7 +81,7 @@ class _AnalogueClockState extends State<AnalogueClock> {
         child: DefaultTextStyle(
           style: TextStyle(
               fontSize: 25 * textScale,
-              color: Theme.of(context).primaryTextTheme.body1.color),
+              color: Theme.of(context).primaryTextTheme.bodyText2.color),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

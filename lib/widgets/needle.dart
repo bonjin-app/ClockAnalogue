@@ -17,8 +17,7 @@ class Needle extends StatelessWidget {
     this.right = 0,
     this.thickness = 4,
     this.color = Colors.red,
-    this.child})
-      : super(key: key);
+    this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

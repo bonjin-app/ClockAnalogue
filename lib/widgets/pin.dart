@@ -6,13 +6,11 @@ class Pin extends StatelessWidget {
   final Color color;
   final Widget child;
 
-  const Pin(
-      {Key key,
+  const Pin({Key key,
         this.alignment = Alignment.center,
         this.radius = 10,
         this.color = Colors.black,
-        this.child})
-      : super(key: key);
+        this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
